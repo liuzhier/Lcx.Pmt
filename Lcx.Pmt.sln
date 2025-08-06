@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lcx.Pmt.ExportData", "Lcx.Pmt.ExportData\Lcx.Pmt.ExportData.csproj", "{9F8960AF-3843-448F-9108-A9D937D1F90B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lcx.Pmt.ExportData.Ui", "Lcx.Pmt.ExportData.Ui\Lcx.Pmt.ExportData.Ui.csproj", "{13D2B7F7-370B-4435-AB98-EC84E5F08D3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F8960AF-3843-448F-9108-A9D937D1F90B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8960AF-3843-448F-9108-A9D937D1F90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8960AF-3843-448F-9108-A9D937D1F90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8960AF-3843-448F-9108-A9D937D1F90B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D2B7F7-370B-4435-AB98-EC84E5F08D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D2B7F7-370B-4435-AB98-EC84E5F08D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D2B7F7-370B-4435-AB98-EC84E5F08D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D2B7F7-370B-4435-AB98-EC84E5F08D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5408818E-C769-49E6-A4D6-328E19757BAE}
+	EndGlobalSection
+EndGlobal
