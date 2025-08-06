@@ -1,7 +1,7 @@
 ﻿namespace Lcx.Pmt
 {
-   public partial class GoMain
-   {
-      
-   }
+    public partial class GoMain
+    {
+
+    }
 }

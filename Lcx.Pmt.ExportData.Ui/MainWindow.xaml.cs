@@ -8,17 +8,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Lcx.Pmt.ExportData.Ui.ViewModels;
 
-namespace Lcx.Pmt.ExportData.Ui
+namespace Lcx.Pmt.ExportData.Ui;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-   /// <summary>
-   /// Interaction logic for MainWindow.xaml
-   /// </summary>
-   public partial class MainWindow : Window
-   {
-      public MainWindow()
-      {
-         InitializeComponent();
-      }
-   }
+    public MainWindow()
+    {
+        DataContext = new MainWindowViewModel();
+        InitializeComponent();
+    }
 }
