@@ -1,27 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net10.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-
+   
    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
       <OutputPath>..\bin\Debug\</OutputPath>
    </PropertyGroup>
-
+   
    <PropertyGroup Condition="'$(Configuration)'=='Release'">
       <OutputPath>..\bin\Release\</OutputPath>
    </PropertyGroup>
-
-   <ItemGroup>
-      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-   </ItemGroup>
-
-   <ItemGroup>
-      <ProjectReference Include="..\Lcx.Pmt.ExportData\Lcx.Pmt.ExportData.csproj" />
-   </ItemGroup>
 
 </Project>

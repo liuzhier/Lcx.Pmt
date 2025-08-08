@@ -8,15 +8,15 @@ namespace Lcx.Pmt.ExportData.Ui.ViewModels;
 public partial class MainWindowViewModel : ObservableObject
 {
     [ObservableProperty]
-    private string _gamePath = string.Empty;
+    private string? _gamePath = string.Empty;
 
     [ObservableProperty]
-    private string _modsPath = string.Empty;
+    private string? _modPath = string.Empty;
 
     [RelayCommand]
     public void SelectGamePath()
     {
-        OpenFolderDialog dialog = new OpenFolderDialog();
+        OpenFolderDialog dialog = new();
         if (dialog.ShowDialog() is true)
         {
             GamePath = dialog.FolderName;
@@ -26,17 +26,16 @@ public partial class MainWindowViewModel : ObservableObject
     [RelayCommand]
     public void SelectModsPath()
     {
-        OpenFolderDialog dialog = new OpenFolderDialog();
+        OpenFolderDialog dialog = new();
         if (dialog.ShowDialog() is true)
         {
-            ModsPath = dialog.FolderName;
+            ModPath = dialog.FolderName;
         }
     }
 
     [RelayCommand]
     public void Start()
     {
-
+        GoMain.Go(GamePath, ModPath);
     }
-
 }
