@@ -8,14 +8,6 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
-      <OutputPath>..\bin\Debug\</OutputPath>
-   </PropertyGroup>
-
-   <PropertyGroup Condition="'$(Configuration)'=='Release'">
-      <OutputPath>..\bin\Release\</OutputPath>
-   </PropertyGroup>
-
    <ItemGroup>
       <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
    </ItemGroup>

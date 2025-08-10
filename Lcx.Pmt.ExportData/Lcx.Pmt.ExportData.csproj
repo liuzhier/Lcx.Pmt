@@ -7,14 +7,6 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
-   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
-      <OutputPath>..\bin\Debug\</OutputPath>
-   </PropertyGroup>
-
-   <PropertyGroup Condition="'$(Configuration)'=='Release'">
-      <OutputPath>..\bin\Release\</OutputPath>
-   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Lcx.Pmt.Entity\Lcx.Pmt.Entity.csproj" />
     <ProjectReference Include="..\Lcx.Pmt\Lcx.Pmt.csproj" />
