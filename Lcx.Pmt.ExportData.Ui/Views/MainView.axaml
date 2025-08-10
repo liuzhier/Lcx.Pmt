@@ -1,17 +1,22 @@
-﻿<Window
-    x:Class="Lcx.Pmt.ExportData.Ui.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<UserControl
+    xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:local="clr-namespace:Lcx.Pmt.ExportData.Ui"
     xmlns:vm="clr-namespace:Lcx.Pmt.ExportData.Ui.ViewModels"
     mc:Ignorable="d"
-    Title="MainWindow"
-    Height="450"
-    Width="800"
-    FontSize="16"
-    d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel}">
+    d:DesignWidth="400"
+    d:DesignHeight="200"
+    x:Class="Lcx.Pmt.ExportData.Ui.Views.MainView"
+    x:DataType="vm:MainViewModel">
+    <Design.DataContext>
+        <!--
+            This only sets the DataContext for the previewer in an IDE,
+            to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs)
+        -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+
 
     <StackPanel Orientation="Vertical">
         <Grid>
@@ -43,4 +48,4 @@
             Command="{Binding StartCommand}"
             Padding="4" />
     </StackPanel>
-</Window>
+</UserControl>
